@@ -39,9 +39,12 @@
           <paper-input label="zoom level" type="number" step="0.1"  min="0" value="{{zoom}}"></paper-input>
           <paper-input label="fill" type="string"  value="{{fill}}"></paper-input>
           <svg-demo-zoom zoom="[[zoom]]">
-            <!-- We circle need to be created in svg namespace, hence the svg element -->
+            <!-- circle need to be created in svg namespace, hence the svg element -->
             <svg>
               <circle fill$="[[fill]]" cx="100" cy="100" r="100" />
+            </svg>
+            <svg slot="font">
+              <circle fill="blue" cx="150" cy="100" r="10" />
             </svg>
           </svg-demo-zoom>
         </template>

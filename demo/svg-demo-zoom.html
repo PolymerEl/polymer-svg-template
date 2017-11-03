@@ -15,6 +15,7 @@ Handlinz zoom with svg
         <template is="dom-repeat" items="[[repeat]]">
           <circle cx$="[[item]]0" cy$="[[item]]0" r="20"></circle>
         </template>
+        <slot name="front"></slot>
       </g>
     </svg>
   </template>
